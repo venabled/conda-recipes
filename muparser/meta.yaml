@@ -1,0 +1,13 @@
+package:
+  name: muparser
+  version: "2.2.3"
+
+source:
+    fn: muparser_v2_2_3.zip
+    url: http://iweb.dl.sourceforge.net/project/muparser/muparser/Version%202.2.3/muparser_v2_2_3.zip
+
+requirements:
+
+about:
+  home: http://muparser.beltoforion.de
+  license: MIT
