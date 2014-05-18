@@ -1,0 +1,23 @@
+package:
+  name: tuiview
+  version: 1.1.0
+
+source:
+  fn: tuiview-1.1.0.tar.gz
+  url: https://bitbucket.org/chchrsc/tuiview/downloads/tuiview-1.1.0.tar.gz
+
+requirements:
+  build:
+    - python
+    - numpy
+    - gdal 1.11.0
+    - pyqt
+  run:
+    - python
+    - numpy
+    - gdal 1.11.0
+    - pyqt
+
+about:
+  home: https://bitbucket.org/chchrsc/tuiview
+  license: GPLv2
