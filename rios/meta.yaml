@@ -10,12 +10,15 @@ requirements:
   build:
     - python
     - numpy
+    - scipy
     - gdal
   run:
     - python
     - numpy
+    - scipy
     - gdal
 
 about:
   home: https://bitbucket.org/chchrsc/rios/
   license: GPLv3
+  summary: Raster I/O simplification, a set of Python modules built on top of GDAL to simplify processing raster data, including data with Raster Attribute Tables.

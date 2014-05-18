@@ -7,4 +7,7 @@
 make
 make install
 
-rm -rf $PREFIX/share
+# Copy data files 
+cp data/*csv $PREFIX/share/gdal/
+cp data/*wkt $PREFIX/share/gdal/
+

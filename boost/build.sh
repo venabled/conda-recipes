@@ -7,11 +7,11 @@
 # Build dependencies:
 # - bzip2-devel
 
-export CFLAGS="-m64 -pipe -O2 -march=x86-64 -fPIC -shared"
-export CXXFLAGS="${CFLAGS}"
+export BZIP2_INCLUDE=$PREFIX/include
+export BZIP2_LIBPATH=$PREFIX/lib
 
-mkdir -vp ${PREFIX}/bin;
-
-./bootstrap.sh --prefix="${PREFIX}" --with-libraries=all --with-python=python
-./b2 install;
+./bootstrap.sh --prefix="${PREFIX}" \
+--without-libraries=python \
+./b2
+./bjam install
 

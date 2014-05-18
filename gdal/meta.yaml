@@ -1,6 +1,6 @@
 package:
   name: gdal
-  version: 1.11.0
+  version: "1.11.0"
 
 source:
   fn: gdal-1.11.0.tar.gz
@@ -35,3 +35,4 @@ test:
 about:
   home: http://www.gdal.org/
   license: MIT
+  summary: The Geospatial Data Abstraction Library (GDAL) Version 1.11.0. Built with all command line tools and with GEOS and HDF5 support.
