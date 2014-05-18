@@ -1,0 +1,18 @@
+package:
+  name: pysolar
+  version: "0.4.3"
+
+source:
+  git_url: https://github.com/petebunting/pysolar.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+about:
+  home: http://pysolar.org
+  license: GPLv3
+  summary: Pysolar is a collection of Python libraries for simulating the irradiation of any point on earth by the sun. It includes code for extremely precise ephemeris calculations, and more. Fork by Pete Bunting to fix compatibility with Python 3.
