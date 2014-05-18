@@ -1,0 +1,19 @@
+package:
+  name: sixs
+  version: "1.1"
+
+source:
+  fn: 6SV-1.1.tar
+  url: ftp://kratmos.gsfc.nasa.gov/pub/eric/6S/6SV1.1/6SV-1.1.tar
+
+  patches:
+  - Makefile_gfortran.patch
+
+requirements:
+  build:
+
+  run:
+
+about:
+  home: http://6s.ltdri.org/
+  summary:  The 6S code is a basic RT code used for calculation of lookup tables in the MODIS atmospheric correction algorithm. It enables accurate simulations of satellite and plane observation, accounting for elevated targets, use of anisotropic and lambertian surfaces and calculation of gaseous absorption.  
