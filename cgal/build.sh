@@ -2,6 +2,8 @@
 
 if [ `uname` == Darwin ]; then
     cmake -D CMAKE_INSTALL_PREFIX=$PREFIX \
+    -D BOOST_ROOT=$PREFIX \
+    -D BOOST_INCLUDE_DIR=$PREFIX/include \
     -D MPFR_INCLUDE_DIR=$PREFIX/include \
     -D MPFR_LIBRARIES=$PREFIX/lib/libmpfr.dylib \
     -D GMP_INCLUDE_DIR=$PREFIX/include \
@@ -14,6 +16,8 @@ if [ `uname` == Darwin ]; then
     .
 else
     cmake -D CMAKE_INSTALL_PREFIX=$PREFIX \
+    -D BOOST_ROOT=$PREFIX \
+    -D BOOST_INCLUDE_DIR=$PREFIX/include \
     -D MPFR_INCLUDE_DIR=$PREFIX/include \
     -D MPFR_LIBRARIES=$PREFIX/lib/libmpfr.so \
     -D GMP_INCLUDE_DIR=$PREFIX/include \

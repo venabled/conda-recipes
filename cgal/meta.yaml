@@ -9,10 +9,13 @@ source:
 requirements:
   build:
     - cmake
+    - boost
+    - qt
     - gmp
     - mpfr
     - zlib
   run:
+    - boost
     - gmp
     - mpfr
     - zlib

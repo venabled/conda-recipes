@@ -1,0 +1,50 @@
+package:
+  name: rsgislib
+  version: "2.2.850"
+
+source:
+  hg_url: https://bitbucket.org/petebunting/rsgislib
+
+requirements:
+  build:
+    - cmake
+    - boost
+    - hdf5
+    - fftw
+    - xerces-c
+    - muparser
+    - gsl
+    - geos
+    - proj4
+    - gdal
+    - kealib 
+    - gmp
+    - mpfr
+    - cgal
+    - python
+    - numpy
+  run:
+    - cmake
+    - boost
+    - hdf5
+    - fftw
+    - xerces-c
+    - muparser
+    - gsl
+    - geos
+    - proj4
+    - gdal
+    - kealib 
+    - gmp
+    - mpfr
+    - cgal
+    - python
+    - numpy
+
+test:
+
+about:
+  home: http://www.rsgislib.org
+  license: GPLv3
+  summary: The Remote Sensing and GIS software library (RSGISLib) is a collection of Python modules for processing remote sensing and GIS datasets.
+
