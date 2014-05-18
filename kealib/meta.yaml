@@ -8,12 +8,12 @@ source:
 
 requirements:
   build:
-    - hdf5 "1.8.13"
-    - gdal "1.11.0"
+    - hdf5 1.8.13
+    - gdal 1.11.0
     - cmake
   run:
-    - hdf5 "1.8.13"
-    - gdal "1.11.0"
+    - hdf5 1.8.13
+    - gdal 1.11.0
 
 test:
 
