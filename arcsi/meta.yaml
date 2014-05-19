@@ -1,0 +1,25 @@
+package:
+  name: arcsi
+  version: "0.5"
+
+source:
+  hg_url: https://bitbucket.org/petebunting/arcsi
+
+requirements:
+  build:
+    - python
+    - py6s
+    - gdal
+    - rsgislib
+    - rios
+  run:
+    - python
+    - py6s
+    - gdal
+    - rsgislib
+    - rios
+
+about:
+  home: http://rsgislib.org/arcsi
+  license: GPLv3
+  summary: Software for the Atmospheric and Radiometric Correction of Satellite Imagery (ARCSI)
