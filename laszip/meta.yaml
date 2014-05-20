@@ -1,0 +1,20 @@
+package:
+  name: laszip
+  version: "2.2.0"
+
+source:
+  fn:  laszip-src-2.2.0.tar.gz
+  url: https://github.com/LASzip/LASzip/releases/download/v2.2.0/laszip-src-2.2.0.tar.gz
+  md5: 1693724d8284dc04f04eb0b86f7de2cc
+
+requirements:
+  build:
+    - cmake
+  run:
+
+test:
+
+about:
+  home: http://www.laszip.org/
+  license: LGPL
+  summary: LASzip is a library for lossless compression of LAS LiDAR data.
