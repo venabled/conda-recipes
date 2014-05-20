@@ -14,6 +14,10 @@ requirements:
 
   run:
 
+test:
+  files:
+  - Example_In_1.txt
+
 about:
   home: http://6s.ltdri.org/
   summary:  The 6S code is a basic RT code used for calculation of lookup tables in the MODIS atmospheric correction algorithm. It enables accurate simulations of satellite and plane observation, accounting for elevated targets, use of anisotropic and lambertian surfaces and calculation of gaseous absorption.  

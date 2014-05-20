@@ -5,5 +5,5 @@ make
 mkdir -p $PREFIX/bin
 mv sixsV1.1 $PREFIX/bin/
 chmod a+x $PREFIX/bin/sixsV1.1
-cd $PREFIX
+cd $PREFIX/bin
 ln -s sixsV1.1 sixs
