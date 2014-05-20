@@ -3,7 +3,9 @@
 ./configure --with-python --prefix=$PREFIX \
 --with-geos=$PREFIX/bin/geos-config \
 --with-static-proj4=$PREFIX \
---with-hdf5=$PREFIX
+--with-hdf5=$PREFIX \
+--with-xerces=$PREFIX \
+--disable-rpath
 make
 make install
 

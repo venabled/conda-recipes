@@ -11,12 +11,14 @@ requirements:
   build:
     - python
     - numpy
+    - xerces-c
     - geos
     - proj4
     - hdf5
   run:
     - python
     - numpy
+    - xerces-c
     - geos
     - proj4
     - hdf5
