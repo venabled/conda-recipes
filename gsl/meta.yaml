@@ -4,7 +4,7 @@ package:
 
 source:
   fn: gsl-1.16.tar.gz
-  url: ftp://ftp.gnu.org/gnu/gsl/gsl-1.16.tar.gz
+  url: http://ftp.gnu.org/gnu/gsl/gsl-1.16.tar.gz
 
 requirements:
 
