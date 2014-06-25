@@ -5,6 +5,8 @@
 --with-static-proj4=$PREFIX \
 --with-hdf5=$PREFIX \
 --with-xerces=$PREFIX \
+--without-pam \
+--with-python \
 --disable-rpath
 make
 make install
