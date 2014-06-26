@@ -10,7 +10,6 @@ requirements:
   build:
     - cmake
     - boost
-    - qt
     - gmp
     - mpfr
     - zlib
