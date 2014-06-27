@@ -1,8 +1,15 @@
 #!/bin/bash
 
-./configure --prefix=$PREFIX --disable-static \
-    --enable-linux-lfs --with-zlib \
-    --enable-cxx --enable-shared
+if [ `uname` == Darwin ]; then
+	./configure --prefix=$PREFIX --disable-static \
+	    --with-zlib \
+		--enable-cxx --enable-shared
+else
+	./configure --prefix=$PREFIX --disable-static \
+		--enable-linux-lfs --with-zlib \
+		--enable-cxx --enable-shared
+fi
+
 make
 make install
 
