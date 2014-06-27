@@ -14,6 +14,7 @@ requirements:
   run:
     - hdf5 1.8.13
     - gdal 1.11.0
+    - zlib 1.2.8
 
 test:
 

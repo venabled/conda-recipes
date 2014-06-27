@@ -9,9 +9,9 @@ source:
 
 requirements:
   build:
-    - zlib
+    - zlib 1.2.8
   run:
-    - zlib
+    - zlib 1.2.8
 
 build:
   number: 0 
