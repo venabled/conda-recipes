@@ -2,11 +2,10 @@
 
 if [ `uname` == Darwin ]; then
 	./configure --prefix=$PREFIX --disable-static \
-	    --with-zlib \
-		--enable-cxx --enable-shared
+	    --with-zlib=$PREFIX --enable-cxx --enable-shared
 else
 	./configure --prefix=$PREFIX --disable-static \
-		--enable-linux-lfs --with-zlib \
+		--enable-linux-lfs --with-zlib=$PREFIX \
 		--enable-cxx --enable-shared
 fi
 
