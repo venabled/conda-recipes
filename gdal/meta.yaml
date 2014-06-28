@@ -14,14 +14,14 @@ requirements:
     - xerces-c
     - geos
     - proj4
-    - hdf5
+    - hdf5 1.8.13
   run:
     - python
     - numpy
     - xerces-c
     - geos
     - proj4
-    - hdf5
+    - hdf5 1.8.13
 
 test:
   files:

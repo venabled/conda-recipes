@@ -1,6 +1,6 @@
 package:
   name: hdf5
-  version: 1.8.13
+  version: "1.8.13"
 
 source:
   fn: hdf5-1.8.13.tar.bz2
@@ -9,9 +9,9 @@ source:
 
 requirements:
   build:
-    - zlib 1.2.8
+    - zlib
   run:
-    - zlib 1.2.8
+    - zlib
 
 build:
   number: 0 
