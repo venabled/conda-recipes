@@ -14,4 +14,4 @@ export BZIP2_LIBPATH=$PREFIX/lib
 --without-libraries=python \
 ./b2
 ./bjam install
-
+cp bjam $PREFIX/bin
