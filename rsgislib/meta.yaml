@@ -8,33 +8,32 @@ source:
 requirements:
   build:
     - cmake
-    - boost
-    - hdf5
-    - fftw
+    - boost 1.54.0
+    - hdf5 1.8.13
+    - fftw 3.3.4
     - xerces-c
     - muparser
     - gsl
     - geos
     - proj4
-    - gdal
-    - kealib 
+    - gdal 1.11.0
+    - kealib 1.4.2
     - gmp
     - mpfr
     - cgal
     - python
     - numpy
   run:
-    - cmake
-    - boost
-    - hdf5
-    - fftw
+    - boost 1.54.0
+    - hdf5 1.8.13
+    - fftw 3.3.4
     - xerces-c
     - muparser
     - gsl
     - geos
     - proj4
-    - gdal
-    - kealib 
+    - gdal 1.11.0
+    - kealib 1.4.2
     - gmp
     - mpfr
     - cgal
