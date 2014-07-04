@@ -1,6 +1,6 @@
 package:
   name: arcsi
-  version: "0.5"
+  version: "0.5.061"
 
 source:
   hg_url: https://bitbucket.org/petebunting/arcsi
