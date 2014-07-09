@@ -4,7 +4,7 @@ package:
 
 source:
   fn: 6SV-1.1.tar
-  url: ftp://kratmos.gsfc.nasa.gov/pub/eric/6S/6SV1.1/6SV-1.1.tar
+  url: http://www.rsgislib.org/arcsi/6SV-1.1.tar
 
   patches:
   - Makefile_gfortran.patch
