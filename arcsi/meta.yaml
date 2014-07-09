@@ -1,6 +1,6 @@
 package:
   name: arcsi
-  version: "0.5.061"
+  version: "0.7.062"
 
 source:
   hg_url: https://bitbucket.org/petebunting/arcsi
@@ -9,13 +9,13 @@ requirements:
   build:
     - python
     - py6s
-    - gdal
+    - gdal 1.11.0
     - rsgislib
     - rios
   run:
     - python
     - py6s
-    - gdal
+    - gdal 1.11.0
     - rsgislib
     - rios
 
