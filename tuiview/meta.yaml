@@ -21,3 +21,4 @@ requirements:
 about:
   home: https://bitbucket.org/chchrsc/tuiview
   license: GPLv2
+  summary: Simple raster viewer. Supports Geolinked Windows, Raster Attribute Querying and Editing and Geographic Selection, Vector Overlay, Flicker, Profile Tool. 
