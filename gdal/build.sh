@@ -8,7 +8,8 @@
 --without-pam \
 --with-python \
 --disable-rpath
-make
+
+make -j 4
 make install
 
 # Copy data files 
