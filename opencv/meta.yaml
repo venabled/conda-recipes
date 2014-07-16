@@ -16,7 +16,6 @@ requirements:
         - jpeg
         - zlib
         - libpng
-        - ffmpeg      # [linux]
 
     run:
         - python
@@ -24,7 +23,6 @@ requirements:
         - jpeg
         - zlib         [unix]
         - libpng
-        - ffmpeg      # [linux]
 
 about:
     home: http://opencv.org/
