@@ -1,5 +1,4 @@
 #!/bin/bash
 
-export HDF5_DIR=$PREFIX
-
-$PYTHON setup.py install
+python setup.py build --hdf5=$PREFIX
+python setup.py install --prefix=$PREFIX
