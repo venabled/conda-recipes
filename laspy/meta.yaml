@@ -1,0 +1,25 @@
+package:
+  name: laspy
+  version: "1.2.5"
+
+source:
+  git_url: https://github.com/grantbrown/laspy
+  git_tag: 1.2.5
+
+requirements:
+  build:
+    - python
+    - numpy
+    - setuptools
+  run:
+    - python
+    - numpy
+    - setuptools
+
+test:
+    imports:
+     - laspy
+
+about:
+  home: http://www.laspy.org/
+  summary: Laspy is a pythonic interface for reading/modifying/creating .LAS LIDAR files matching specification 1.0-1.4.
