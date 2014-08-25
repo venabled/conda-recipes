@@ -10,8 +10,15 @@
 export BZIP2_INCLUDE=$PREFIX/include
 export BZIP2_LIBPATH=$PREFIX/lib
 
-./bootstrap.sh --prefix="${PREFIX}" \
---without-libraries=python \
+if [ `uname` == Darwin ]; then
+    export DYLD_LIBRARY_PATH=$PREFIX/lib
+else
+    export LD_LIBRARY_PATH=$PREFIX/lib
+fi
+
+#ln -s $PREFIX/lib/python3.4m $PREFIX/lib/python3.4
+
+./bootstrap.sh --prefix="${PREFIX}" --with-python=$PREFIX/bin/python --with-python-root=$PREFIX  --with-libraries=all
 ./b2
 ./bjam install
 cp bjam $PREFIX/bin

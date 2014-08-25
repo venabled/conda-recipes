@@ -1,0 +1,24 @@
+package:
+  name: rgdal
+  version: "0.8.16"
+
+source:
+  fn: rgdal_0.8-16.tar.gz
+  url: http://cran.r-project.org/src/contrib/rgdal_0.8-16.tar.gz
+
+requirements:
+  build:
+    - r
+    - rsp
+    - proj4
+    - gdal
+  run:
+    - r
+    - rsp
+    - proj4
+    - gdal
+
+about:
+  home: http://cran.r-project.org/web/packages/rgdal/index.html
+  license: GPLv3
+  summary: R bindings for GDAL.

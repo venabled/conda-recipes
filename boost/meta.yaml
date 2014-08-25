@@ -8,13 +8,14 @@ source:
     url: http://sourceforge.net/projects/boost/files/boost/1.54.0/boost_1_54_0.tar.bz2
 
 build:
-    number: 0
+    number: 1
 
 requirements:
     build:
+     - python
      - bzip2
     run:
-
+     - python
 test:
     imports:
 

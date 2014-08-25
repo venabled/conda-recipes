@@ -41,3 +41,20 @@ python setup.py build \
 --lasinclude=$PREFIX/include \
 --hdf5include=$PREFIX/include
 python setup.py install --prefix=$PREFIX
+
+cd ../python
+
+cmake -D CMAKE_INSTALL_PREFIX=$PREFIX/lib/python2.7 \
+-D CMAKE_VERBOSE_MAKEFILE=ON \
+-D SPDLIB_IO_INCLUDE_DIR=$PREFIX/include \
+-D SPDLIB_IO_LIB_PATH=$PREFIX/lib \
+-D GDAL_INCLUDE_DIR=$PREFIX/lib \
+-D HDF5_INCLUDE_DIR=$PREFIX/include \
+-D HDF5_LIB_PATH=$PREFIX/lib \
+-D CMAKE_VERBOSE_MAKEFILE=ON \
+-D BOOST_INCLUDE_DIR=$PREFIX/include \
+-D BOOST_LIB_PATH=$PREFIX/lib \
+.
+
+make
+make install

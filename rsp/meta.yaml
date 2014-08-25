@@ -1,0 +1,22 @@
+package:
+  name: rsp
+  version: "1.0.15"
+
+source:
+  fn: sp_1.0-15.tar.gz
+  url: http://cran.r-project.org/src/contrib/sp_1.0-15.tar.gz
+
+requirements:
+  build:
+    - r
+    - proj4
+    - geos
+  run:
+    - r
+    - proj4
+    - geos
+
+about:
+  home: http://cran.r-project.org/web/packages/sp/index.html
+  license: GPLv3
+  summary: R package that provides classes and methods for spatial data. 
