@@ -2,8 +2,10 @@
 
 if [ `uname` == Darwin ]; then
     export DYLD_LIBRARY_PATH=$PREFIX/lib
+    PYTHONLIB=$PREFIX/lib/libpython3.4m.dylib
 else
     export LD_LIBRARY_PATH=$PREFIX/lib
+    PYTHONLIB=$PREFIX/lib/libpython3.4m.so
 fi
 
 cmake -D CMAKE_INSTALL_PREFIX=$PREFIX \
@@ -44,7 +46,7 @@ python setup.py install --prefix=$PREFIX
 
 cd ../python
 
-cmake -D CMAKE_INSTALL_PREFIX=$PREFIX/lib/python2.7 \
+cmake -D CMAKE_INSTALL_PREFIX=$PREFIX/lib/python3.4 \
 -D CMAKE_VERBOSE_MAKEFILE=ON \
 -D SPDLIB_IO_INCLUDE_DIR=$PREFIX/include \
 -D SPDLIB_IO_LIB_PATH=$PREFIX/lib \
@@ -54,6 +56,8 @@ cmake -D CMAKE_INSTALL_PREFIX=$PREFIX/lib/python2.7 \
 -D CMAKE_VERBOSE_MAKEFILE=ON \
 -D BOOST_INCLUDE_DIR=$PREFIX/include \
 -D BOOST_LIB_PATH=$PREFIX/lib \
+-D PYTHON_INCLUDE_DIR=$PREFIX/include/python3.4m \
+-D PYTHON_LIBRARY=$PYTHONLIB \
 .
 
 make
