@@ -2,23 +2,25 @@ package:
   name: spd3dpointsviewer
   version: "2.2.0"
 
+build:
+  number: 1
+
 source:
   hg_url: https://bitbucket.org/petebunting/spd-3d-points-viewer
 
 requirements:
   build:
     - cmake
-    - qt [osx]  
     - hdf5 1.8.13
     - boost 1.54.0
     - gdal 1.11.0
-    - spdlib
+    - spdlib 3.1.280
   run:
     - qt
     - hdf5 1.8.13
     - boost 1.54.0
     - gdal 1.11.0
-    - spdlib
+    - spdlib 3.1.280
 
 about:
   home: https://bitbucket.org/petebunting/spd-3d-points-viewer/
