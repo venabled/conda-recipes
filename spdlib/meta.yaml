@@ -1,6 +1,6 @@
 package:
   name: spdlib
-  version: "3.1.280"
+  version: "3.1.282"
 
 source:
   hg_url: https://bitbucket.org/petebunting/spdlib
