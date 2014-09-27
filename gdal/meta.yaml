@@ -1,7 +1,6 @@
 package:
   name: gdal
   version: "1.11.0"
-
 source:
   fn: gdal-1.11.0.tar.gz
   url: http://download.osgeo.org/gdal/1.11.0/gdal-1.11.0.tar.gz
@@ -24,6 +23,9 @@ requirements:
     - proj4
     - hdf5 1.8.13
     - curl
+
+build:
+  number: 1
 
 test:
   files:
