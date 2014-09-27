@@ -1,10 +1,9 @@
 package:
   name: kealib
-  version: "1.4.2"
+  version: "1.4.3"
 
 source:
-  fn: kealib-1.4.2.tar.gz
-  url: https://bitbucket.org/chchrsc/kealib/downloads/kealib-1.4.2.tar.gz
+  hg_url: https://bitbucket.org/chchrsc/kealib/
 
 requirements:
   build:
@@ -17,6 +16,8 @@ requirements:
     - zlib
 
 test:
+  files:
+    - run_test.py
 
 about:
   home: https://bitbucket.org/chchrsc/kealib/
