@@ -1,6 +1,6 @@
 package:
   name: rsgis_scripts
-  version: 20140707
+  version: 20140905
 
 source:
   hg_url: https://bitbucket.org/petebunting/rsgis_scripts/
