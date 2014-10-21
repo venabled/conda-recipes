@@ -12,7 +12,7 @@ requirements:
     - hdf5 1.8.13
     - xerces-c
     - gsl
-    - gdal 1.11.0
+    - gdal 1.11.1
     - gmp
     - mpfr
     - cgal 4.4
@@ -25,7 +25,7 @@ requirements:
     - hdf5 1.8.13
     - xerces-c
     - gsl
-    - gdal 1.11.0
+    - gdal 1.11.1
     - gmp
     - mpfr
     - cgal 4.4
@@ -33,6 +33,9 @@ requirements:
     - laszip 2.2.0
     - python
     - numpy
+
+build:
+    number: 1
 
 about:
   home: http://www.spdlib.org
