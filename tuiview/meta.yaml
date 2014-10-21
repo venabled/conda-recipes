@@ -10,12 +10,12 @@ requirements:
   build:
     - python
     - numpy
-    - gdal 1.11.1
+    - gdal 1.11.*
     - pyqt
   run:
     - python
     - numpy
-    - gdal 1.11.1
+    - gdal 1.11.*
     - pyqt
 
 build:
