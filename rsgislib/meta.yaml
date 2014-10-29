@@ -1,6 +1,6 @@
 package:
   name: rsgislib
-  version: "2.2.963"
+  version: "2.2.979"
 
 source:
   hg_url: https://bitbucket.org/petebunting/rsgislib
@@ -21,7 +21,7 @@ requirements:
     - mpfr
     - cgal
     - python
-    - numpy
+    - numpy 1.9.0
   run:
     - boost 1.54.0
     - hdf5 1.8.13
@@ -36,11 +36,7 @@ requirements:
     - mpfr
     - cgal
     - python
-    - numpy
-
-test:
-  files:
-    - run_test.py
+    - numpy 1.9.0
 
 about:
   home: http://www.rsgislib.org
