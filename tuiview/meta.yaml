@@ -10,13 +10,16 @@ requirements:
   build:
     - python
     - numpy
-    - gdal 1.11.0
+    - gdal 1.11.*
     - pyqt
   run:
     - python
     - numpy
-    - gdal 1.11.0
+    - gdal 1.11.*
     - pyqt
+
+build:
+  number: 1
 
 about:
   home: https://bitbucket.org/chchrsc/tuiview

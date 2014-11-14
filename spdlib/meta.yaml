@@ -1,6 +1,6 @@
 package:
   name: spdlib
-  version: "3.1.280"
+  version: "3.2.0"
 
 source:
   hg_url: https://bitbucket.org/petebunting/spdlib
@@ -12,27 +12,30 @@ requirements:
     - hdf5 1.8.13
     - xerces-c
     - gsl
-    - gdal 1.11.0
+    - gdal 1.11.1
     - gmp
     - mpfr
     - cgal 4.4
     - liblas 1.7.0
     - laszip 2.2.0
     - python
-    - numpy
+    - numpy 1.9.1
   run:
     - boost 1.54.0
     - hdf5 1.8.13
     - xerces-c
     - gsl
-    - gdal 1.11.0
+    - gdal 1.11.1
     - gmp
     - mpfr
     - cgal 4.4
     - liblas 1.7.0
     - laszip 2.2.0
     - python
-    - numpy
+    - numpy 1.9.1
+
+build:
+    number: 1
 
 about:
   home: http://www.spdlib.org

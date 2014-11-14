@@ -1,6 +1,6 @@
 package:
   name: rsgislib
-  version: "2.2.906"
+  version: "2.2.982"
 
 source:
   hg_url: https://bitbucket.org/petebunting/rsgislib
@@ -10,37 +10,33 @@ requirements:
     - cmake
     - boost 1.54.0
     - hdf5 1.8.13
-    - fftw 3.3.4
     - xerces-c
     - muparser
     - gsl
     - geos
     - proj4
-    - gdal 1.11.0
-    - kealib 1.4.2
+    - gdal 1.11.1
+    - kealib 1.4.4
     - gmp
     - mpfr
     - cgal
     - python
-    - numpy
+    - numpy 1.9.0
   run:
     - boost 1.54.0
     - hdf5 1.8.13
-    - fftw 3.3.4
     - xerces-c
     - muparser
     - gsl
     - geos
     - proj4
-    - gdal 1.11.0
-    - kealib 1.4.2
+    - gdal 1.11.1
+    - kealib 1.4.4
     - gmp
     - mpfr
     - cgal
     - python
-    - numpy
-
-test:
+    - numpy 1.9.0
 
 about:
   home: http://www.rsgislib.org

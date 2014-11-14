@@ -14,6 +14,6 @@ except ImportError:
 else:
     driver = gdal.GetDriverByName("KEA")
     if driver is None:
-        raise Exception('Could not import KEA in GDAL')
+        print("ERROR: Could not import KEA in GDAL")
     else:
-        print('KEA driver recognised from Python')
+        print("KEA driver recognised from Python")

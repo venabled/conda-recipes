@@ -14,7 +14,7 @@ requirements:
     - zlib
 
 build:
-  number: 0 
+  number: 10
 
 about:
   home: http://www.hdfgroup.org/HDF5/
