@@ -21,7 +21,7 @@ requirements:
     - mpfr
     - cgal
     - python
-    - numpy 1.9.0
+    - numpy
   run:
     - boost 1.54.0
     - hdf5 1.8.13
@@ -36,7 +36,7 @@ requirements:
     - mpfr
     - cgal
     - python
-    - numpy 1.9.0
+    - numpy
 
 about:
   home: http://www.rsgislib.org
