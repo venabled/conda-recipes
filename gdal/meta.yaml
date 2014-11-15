@@ -13,6 +13,8 @@ requirements:
     - xerces-c
     - geos
     - proj4
+    - netcdf4
+    - postgresql [linux]
     - hdf5 1.8.13
     - curl
   run:
@@ -21,11 +23,13 @@ requirements:
     - xerces-c
     - geos
     - proj4
+    - netcdf4
+    - postgresql [linux]
     - hdf5 1.8.13
     - curl
 
 build:
-  number: 10
+  number: 11
 
 test:
   files:
