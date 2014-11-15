@@ -9,13 +9,13 @@ requirements:
   build:
     - python
     - py6s
-    - gdal
+    - gdal 1.11.1
     - rsgislib
     - rios
   run:
     - python
     - py6s
-    - gdal
+    - gdal 1.11.1
     - rsgislib
     - rios
 
