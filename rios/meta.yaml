@@ -2,6 +2,9 @@ package:
   name: rios
   version: 1.3.1
 
+build:
+  number: 2
+
 source:
   fn: rios-1.3.1.tar.gz
   url: https://bitbucket.org/chchrsc/rios/downloads/rios-1.3.0.tar.gz
