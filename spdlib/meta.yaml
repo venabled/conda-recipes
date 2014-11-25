@@ -19,7 +19,7 @@ requirements:
     - liblas 1.7.0
     - laszip 2.2.0
     - python
-    - numpy 1.9.1
+    - numpy 
   run:
     - boost 1.54.0
     - hdf5 1.8.13
@@ -32,7 +32,7 @@ requirements:
     - liblas 1.7.0
     - laszip 2.2.0
     - python
-    - numpy 1.9.1
+    - numpy 
 
 build:
     number: 1
