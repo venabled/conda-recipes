@@ -1,0 +1,23 @@
+package:
+  name: enum34
+  version: 1.0.4
+
+source:
+  fn: enum34-1.0.4.tar.gz
+  url: https://pypi.python.org/packages/source/e/enum34/enum34-1.0.4.tar.gz
+  md5: ac80f432ac9373e7d162834b264034b6
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+test:
+  imports:
+    - enum
+
+about:
+  home: https://pypi.python.org/pypi/enum34
+  license: BSD
