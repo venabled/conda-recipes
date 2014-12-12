@@ -3,42 +3,25 @@
 # Hints:
 # http://boost.2283326.n4.nabble.com/how-to-build-boost-with-bzip2-in-non-standard-location-td2661155.html
 # http://www.gentoo.org/proj/en/base/amd64/howtos/?part=1&chap=3
-# http://www.boost.org/doc/libs/1_55_0/doc/html/bbv2/reference.html
-
-# Hints for OSX:
-# http://stackoverflow.com/questions/20108407/how-do-i-compile-boost-for-os-x-64b-platforms-with-stdlibc
-
+#
+# Python 3 build - http://thb.lt/blog/2014/boost-python-3-osx.html
 # Build dependencies:
 # - bzip2-devel
 
-mkdir -vp ${PREFIX}/bin;
+export BZIP2_INCLUDE=$PREFIX/include
+export BZIP2_LIBPATH=$PREFIX/lib
 
 if [ `uname` == Darwin ]; then
-  MACOSX_VERSION_MIN=10.8
-  CXXFLAGS="-mmacosx-version-min=${MACOSX_VERSION_MIN}"
-  CXXFLAGS="${CXXFLAGS} -std=c++11 -stdlib=libc++"
-  LINKFLAGS="-mmacosx-version-min=${MACOSX_VERSION_MIN} "
-  LINKFLAGS="${LINKFLAGS} -stdlib=libc++"
-
-  B2ARGS="toolset=clang"
-
-  ./bootstrap.sh \
-    --prefix="${PREFIX}/" --libdir="${PREFIX}/lib/" \
-    | tee bootstrap.log 2>&1
-  ./b2 \
-    variant=release address-model=64 architecture=x86 \
-    threading=multi link=shared ${B2ARGS} \
-    cxxflags="${CXXFLAGS}" linkflags="${LINKFLAGS}" \
-    install | tee b2.log 2>&1
+    export DYLD_LIBRARY_PATH=$PREFIX/lib
 else
-  B2ARGS="toolset=gcc"
-
-  ./bootstrap.sh \
-    --prefix="${PREFIX}/" --libdir="${PREFIX}/lib/" \
-    | tee bootstrap.log 2>&1
-  ./b2 \
-    variant=release address-model=64 architecture=x86 \
-    threading=multi link=shared ${B2ARGS} \
-    install | tee b2.log 2>&1
+    export LD_LIBRARY_PATH=$PREFIX/lib
 fi
 
+./bootstrap.sh --prefix="${PREFIX}" \
+ --with-python-version=3.4 \
+ --with-python=$PYTHON \
+ --with-python-root=$PREFIX  \
+ --with-libraries=all
+./b2 include="$PREFIX/include/python3.4m"
+./bjam install
+cp bjam $PREFIX/bin

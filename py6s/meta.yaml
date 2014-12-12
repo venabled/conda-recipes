@@ -1,0 +1,30 @@
+package:
+  name: py6s
+  version: "1.5.0"
+
+source:
+  git_url: https://github.com/robintw/Py6S.git
+  git_tag: v1.5.0
+
+requirements:
+  build:
+    - python
+    - sixs
+    - numpy
+    - matplotlib
+    - dateutil
+    - pysolar
+    - pandas
+  run:
+    - python
+    - sixs
+    - numpy
+    - matplotlib
+    - dateutil
+    - pysolar
+    - pandas
+ 
+about:
+  home: http://www.py6s.rtwilson.com/
+  license: LGPL
+  summary: Py6S is a Python interface to the 6S Radiative Transfer Model. It allows you to run many 6S simulations using a simple Python syntax 

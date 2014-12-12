@@ -1,0 +1,21 @@
+package:
+  name: armadillo
+  version: "4.500.0"
+
+source:
+  fn: armadillo-4.500.0.tar.gz 
+  url: http://downloads.sourceforge.net/project/arma/armadillo-4.500.0.tar.gz
+
+requirements:
+  build:
+    - cmake
+  run:
+    - cmake
+
+build:
+  number: 0
+
+about:
+  home: http://arma.sourceforge.net/
+  license: Mozilla Public License 2.0
+  summary: Armadillo is a high quality C++ linear algebra library, aiming towards a good balance between speed and ease of use

@@ -1,0 +1,27 @@
+package:
+  name: liblas
+  version: "1.7.0"
+
+source:
+  fn: http://download.osgeo.org/liblas/libLAS-1.7.0.tar.gz
+  url: http://download.osgeo.org/liblas/libLAS-1.7.0.tar.gz
+  md5: 03de7a61132902846c12f3b28c38eb37
+
+requirements:
+  build:
+    - cmake
+    - gdal 1.11.1
+    - laszip
+    - boost 1.54.0
+  run:
+    - gdal 1.11.1
+    - laszip
+    - boost 1.54.0
+
+build:
+    number: 1
+
+about:
+  home: http://www.liblas.org/
+  license: BSD
+  summary: libLAS is a C/C++ library for reading and writing the LAS LiDAR format.

@@ -1,0 +1,27 @@
+package:
+  name: tuiview
+  version: 1.1.2
+
+source:
+  fn: tuiview-1.1.2.tar.gz
+  url: https://bitbucket.org/chchrsc/tuiview/downloads/tuiview-1.1.2.tar.gz
+
+requirements:
+  build:
+    - python
+    - numpy
+    - gdal 1.11.*
+    - pyqt
+  run:
+    - python
+    - numpy
+    - gdal 1.11.*
+    - pyqt
+
+build:
+  number: 1
+
+about:
+  home: https://bitbucket.org/chchrsc/tuiview
+  license: GPLv2
+  summary: Simple raster viewer. Supports Geolinked Windows, Raster Attribute Querying and Editing and Geographic Selection, Vector Overlay, Flicker, Profile Tool. 

@@ -1,0 +1,19 @@
+package:
+  name: laszip
+  version: "2.2.0"
+
+source:
+  git_url: https://github.com/LASzip/LASzip.git
+  git_tag: v2.2.0
+
+requirements:
+  build:
+    - cmake
+  run:
+
+test:
+
+about:
+  home: http://www.laszip.org/
+  license: LGPL
+  summary: LASzip is a library for lossless compression of LAS LiDAR data.

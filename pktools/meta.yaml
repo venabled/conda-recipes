@@ -1,0 +1,25 @@
+package:
+  name: pktools
+  version: "2.5.4"
+source:
+  fn: pktools-2.5.4.tar.gz
+  url: http://download.savannah.gnu.org/releases/pktools/pktools-2.5.4.tar.gz
+  md5: 1ee73e2b0ab7892f76a5a86eee59850a
+
+requirements:
+  build:
+    - armadillo
+    - gsl
+    - gdal
+  run:
+    - armadillo
+    - gsl
+    - gdal
+
+build:
+  number: 0
+
+about:
+  home: http://pktools.nongnu.org 
+  license: GPLv3
+  summary: pktools is a collection of programs written in C++ for image processing with a focus on remote sensing applications. It relies on the Geospatial Data Abstraction Library (GDAL, http://www.gdal.org) and OG

@@ -1,0 +1,44 @@
+package:
+  name: spdlib
+  version: "3.2.0"
+
+source:
+  hg_url: https://bitbucket.org/petebunting/spdlib
+
+requirements:
+  build:
+    - cmake
+    - boost 1.54.0
+    - hdf5 1.8.13
+    - xerces-c
+    - gsl
+    - gdal 1.11.1
+    - gmp
+    - mpfr
+    - cgal 4.4
+    - liblas 1.7.0
+    - laszip 2.2.0
+    - python
+    - numpy 
+  run:
+    - boost 1.54.0
+    - hdf5 1.8.13
+    - xerces-c
+    - gsl
+    - gdal 1.11.1
+    - gmp
+    - mpfr
+    - cgal 4.4
+    - liblas 1.7.0
+    - laszip 2.2.0
+    - python
+    - numpy 
+
+build:
+    number: 1
+
+about:
+  home: http://www.spdlib.org
+  license: GPLv3
+  summary: The Sorted Pulse Data Library (SPDLib) provides a format for storing and tools for processing discrete return and full waveform LiDAR data from airborne and terrestrial sensors.
+

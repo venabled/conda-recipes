@@ -12,5 +12,5 @@ build:
 about:
   home: http://trac.osgeo.org/proj/
   license: MIT
-
-# vim:set ts=8 sw=2 sts=2 tw=78 et:
+  summary:  PROJ.4 Cartographic Projections library
+    

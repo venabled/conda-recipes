@@ -1,0 +1,21 @@
+package:
+  name: rsgis_scripts
+  version: 20140905
+
+source:
+  hg_url: https://bitbucket.org/petebunting/rsgis_scripts/
+
+requirements:
+  build:
+   - gdal
+   - numpy
+   - matplotlib
+  run:
+   - gdal
+   - numpy
+   - matplotlib
+
+about:
+  home: https://bitbucket.org/petebunting/rsgis_scripts
+  license: MIT-X
+  summary: A collection of scripts, mostly in Python, for working with Remote Sensing data. Developed as part of the research by Pete Bunting, Dan Clewley, et al.,

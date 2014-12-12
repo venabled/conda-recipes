@@ -1,24 +1,25 @@
+
 package:
-  name: boost
-  version: 1.55.0
+    name: boost
+    version: "1.54.0"
 
 source:
-  fn: boost_1_55_0.tar.bz2
-  url: http://sourceforge.net/projects/boost/files/boost/1.55.0/boost_1_55_0.tar.bz2
-
-  patches:
-    - 1.55.0_patches/6bb71fdd.diff  [osx]
-    - 1.55.0_patches/e4bde20f.diff  [osx]
-    - 1.55.0_patches/0005-Boost.S11n-include-missing-algorithm.patch  [osx]
+    fn: boost_1_54_0.tar.bz2
+    url: http://sourceforge.net/projects/boost/files/boost/1.54.0/boost_1_54_0.tar.bz2
 
 build:
-  number: 1
+    number: 1
 
 requirements:
-  build:
-    - python
+    build:
+     - python
+     - bzip2
+    run:
+     - python
+test:
+    imports:
 
 about:
-  home: http://www.boost.org/
-  license: Boost-1.0
+    home: http://www.boost.org/
+    license: Boost-1.0
 

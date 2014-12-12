@@ -1,0 +1,26 @@
+package:
+  name: cgal
+  version: "4.4"
+
+source:
+  fn: CGAL-4.4.tar.bz2
+  url: https://gforge.inria.fr/frs/download.php/33524/CGAL-4.4.tar.bz2
+
+requirements:
+  build:
+    - cmake
+    - boost 1.54.0
+    - gmp
+    - mpfr
+    - zlib
+  run:
+    - boost 1.54.0
+    - gmp
+    - mpfr
+    - zlib
+
+test:
+
+about:
+  home: http://www.cgal.org
+  license: GPLv3

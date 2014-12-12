@@ -1,0 +1,13 @@
+package:
+  name: ne
+  version: "2.5"
+
+source:
+  fn: ne-2.5.tar.gz
+  url: http://ne.di.unimi.it/ne-2.5.tar.gz
+
+requirements:
+
+about:
+  home: http://ne.di.unimi.it
+  license: GPL3

@@ -1,0 +1,14 @@
+package:
+  name: icu4c
+  version: "53.1"
+
+source:
+  fn: icu4c-53_1-src.tgz
+  url: http://download.icu-project.org/files/icu4c/53.1/icu4c-53_1-src.tgz
+  md5: b73baa6fbdfef197608d1f69300919b9
+
+requirements:
+
+about:
+  home: http://site.icu-project.org
+  license: ICU License

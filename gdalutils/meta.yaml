@@ -1,0 +1,28 @@
+package:
+  name: gdalutils
+  version: 20140513
+
+source:
+  hg_url: https://bitbucket.org/chchrsc/gdalutils
+
+requirements:
+  build:
+    - cmake
+    - python
+    - geos
+    - numpy
+    - numba
+    - gdal
+    - rios
+  run:
+    - python
+    - geos
+    - numpy
+    - numba
+    - gdal
+    - rios
+
+about:
+  home: https://bitbucket.org/chchrsc/gdalutils/
+  license: GPLv3
+  summary: Collection of utilities from QLD DERM that have been modified for use by Landcare

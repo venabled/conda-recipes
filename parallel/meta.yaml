@@ -1,0 +1,12 @@
+package:
+  name: parallel
+  version: "20140822"
+
+source:
+  fn: parallel-20140822.tar.bz2
+  url: http://ftp.gnu.org/gnu/parallel/parallel-20140822.tar.bz2
+
+about:
+  home: http://www.gnu.org/software/parallel/
+  license: GSLv3
+  summary: GNU parallel is a shell tool for executing jobs in parallel using one or more computers. 

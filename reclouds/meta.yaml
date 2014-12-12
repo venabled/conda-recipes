@@ -1,0 +1,25 @@
+package:
+  name: reclouds
+  version: "1.0.0"
+
+source:
+  hg_url: https://bitbucket.org/sebclarke/clouds
+
+requirements:
+  build:
+    - cmake
+    - rsgislib
+    - gdal 1.11.0
+    - opencv
+  run:
+    - rsgislib
+    - gdal 1.11.0
+    - opencv
+
+test:
+
+about:
+  home: http://www.bitbucket.org/sebclarke/clouds
+  license: GPLv3
+  summary: Algorithm which is part of ARCSI for classifying clouds from RapidEye Imagery
+

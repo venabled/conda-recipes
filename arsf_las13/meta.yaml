@@ -1,0 +1,19 @@
+package:
+  name: arsf_las13
+  version: "20141118"
+
+source:
+  git_url: https://github.com/pmlrsg/arsf_tools.git
+
+requirements:
+  build:
+    - python
+    - matplotlib
+  run:
+    - python
+    - matplotlib
+ 
+about:
+  home: https://github.com/pmlrsg/arsf_tools/tree/master/las13
+  license: GPLv3
+  summary: A Python library to read full waveform LiDAR data in LAS 1.3 format.

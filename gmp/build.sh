@@ -3,9 +3,13 @@
 chmod +x configure
 
 if [ `uname` == Darwin ]; then
-    ./configure --prefix=$PREFIX --enable-cxx
+    ./configure --prefix=$PREFIX \
+    --enable-cxx \
+    --enable-fft
 else
-    ./configure --prefix=$PREFIX
+    ./configure --prefix=$PREFIX \
+    --enable-cxx \
+    --enable-fft
 fi
 
 make
